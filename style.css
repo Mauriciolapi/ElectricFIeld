@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: black;
+    background-image: url(/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(220deg, #000000, #01643c, #000000);
+    background-size: 600% 600%;
+    animation: AnimationName 10s ease infinite alternate-reverse; */
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.allInput{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/atomo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.allInput > .inputContainer{
+    box-shadow: 0px 0px 10px -1px white;
+    max-width: 500px;
+    max-height: 800px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.allInput > .inputContainer > .titulo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    color: #00788D;
+}
+
+.allInput > .inputContainer > .inputs{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.allInput > .inputContainer > .inputs > .btnAgregarCarga{
+    font-size: 2em;
+    color: #00788D;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 10%;
+    user-select: none;
+}
+
+.allInput > .inputContainer > .inputs > .btnAgregarCarga:hover{
+    font-size: 2.3em;
+}
+
+
+.allInput > .inputContainer > .inputs > .inputsCarga{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.allInput > .inputContainer > .inputs > .inputsCarga > div{
+    font-size: 2em;
+    color: #00788D;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.allInput > .inputContainer > .inputs > .inputsCarga > div > div:nth-child(1){
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+}
+
+.allInput > .inputContainer > .inputs > .inputsCarga > div > div:nth-child(2){
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end; 
+}
+
+.allInput > .inputContainer > .inputs > .inputsCarga > div > div:nth-child(2) > select{
+    background-color: transparent;
+    border: 2px solid white;
+    border-right: 0px;
+    font-size: 1em;
+    width: 100%;
+    padding: 3px;
+    color: #00788D;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline: none;
+}
+
+select > option{
+    background-color: rgba(0, 0, 0, 0.951);
+}
+
+.allInput > .inputContainer > .inputs > .inputsCarga > div > div:nth-child(2) > div:nth-child(2){
+    border: 2px solid white;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0px;
+    padding: 3px;
+}
+
+.allInput > .inputContainer > .submit{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.allInput > .inputContainer > .submit > .btnSubmit{
+    font-size: 2em;
+    color: #00788D;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    user-select: none;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px -1px #00788D;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.allInput > .inputContainer > .submit > .btnSubmit:hover{
+    font-size: 2.3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.allCampo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.allCampo > .arrow{
+    width: 5%;
+    height: 10%;
+}
+
+.allCampo > .carga {
+    width: 2%;
+    height: 4%;
+    border-radius: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    user-select: none;
+    cursor: grab;
+    box-shadow: 0px 0px 10px -1px white;
+    filter: drop-shadow(0px 0px 5px white);
+}
+
+.allCampo > .carga > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes AnimationName {
+    0%{background-position:0% 52%}
+    50%{background-position:100% 49%}
+    100%{background-position:0% 52%}
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 30px;
+    box-shadow: inset 0 0 10px #303030;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 30px;
+    background-color: rgba(240, 248, 255, 0.884);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(240, 248, 255, 0.637);
+}
