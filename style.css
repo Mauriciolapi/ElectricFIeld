@@ -17,7 +17,7 @@ body{
     height: 100%;
     display: flex;
     background-color: black;
-    background-image: url(/fondo.jpg);
+    background-image: url(source/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     /* background: linear-gradient(220deg, #000000, #01643c, #000000);
@@ -50,7 +50,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/atomo.png);
+    background-image: url(source/atomo.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
